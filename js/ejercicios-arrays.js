@@ -12,6 +12,7 @@ let array = [0, 0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
 console.log(suma(array))
 
+console.clear()
 
 // 2. Escribe una función que tome un array de palabras y devuelva un nuevo array con la longitud de cada palabra.
 function determinarLongitudPalabras(array) {
@@ -24,6 +25,8 @@ function determinarLongitudPalabras(array) {
 
 array = ["Hola", "Hola como andas?", "No se que poner", "Ya no voy a poner mas nada"]
 console.log(determinarLongitudPalabras(array))
+
+console.clear()
 
 // 3. Implementa una función que tome un array de números y devuelva un nuevo array con solo los números pares.
 function devolverPares(array) {
@@ -40,6 +43,8 @@ array = [0, 0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 console.log(devolverPares(array))
 
 
+console.clear()
+
 // 4. Crea una función que reciba un array de nombres y devuelva un nuevo array con solo los nombres que comiencen con una letra específica.
 function buscarNombre(array, letra) {
     let nombres = []
@@ -55,6 +60,8 @@ array = ["Maria", "Teresa", "Mariana", "Jose", "Pedro", "Juan"]
 let letra = "m"
 console.log(buscarNombre(array, letra))
 
+console.clear()
+
 // 5. Escribe una función que tome un array de números y devuelva el número más grande.
 function determinarMayor(array) {
     return Math.max(...array)
@@ -62,6 +69,8 @@ function determinarMayor(array) {
 
 array = [0, 0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 console.log(determinarMayor(array))
+
+console.clear()
 
 // 6. Implementa una función que tome un array de objetos con propiedades "nombre" y "edad", y devuelva un nuevo array con solo los objetos que tengan una edad mayor a 18.
 function determinarMayores(objeto) {
@@ -85,6 +94,8 @@ const personas = [
 
 console.log(determinarMayores(personas))
 
+console.clear()
+
 // 7. Crea una función que tome un array de números y devuelva la suma de todos los números negativos.
 function sumarNegativos(array) {
     let total = 0
@@ -100,6 +111,8 @@ array = [0, 0, -1, 1, -2, -3, 5, -8, 13, -21, 34]
 
 console.log(sumarNegativos(array))
 
+console.clear()
+
 // 8. Escribe una función que tome un array de strings y devuelva un nuevo array con solo los strings que tengan más de 5 caracteres.
 function determinarLongitud5(array) {
     let arrayLongitud = []
@@ -113,6 +126,8 @@ function determinarLongitud5(array) {
 
 array = ["Hola", "Hola como andas?", "No   5", "No  5", "Ya no voy a poner mas nada"]
 console.log(determinarLongitud5(array))
+
+console.clear()
 
 // 9. Implementa una función que tome un array de objetos con propiedades "nombre" y "apellido", y devuelva un nuevo array con solo los objetos que tengan el mismo apellido.
 
@@ -215,6 +230,8 @@ function agregarPersonas(arrayRepetidos, arrayObjeto) {
 
 console.log(agregarPersonas(apellidosRepetidos, PERSONAS))
 
+console.clear()
+
 // 10. Crea una función que tome un array de números y devuelva un nuevo array con solo los números impares multiplicados por 2.
 function devolverImparesPorDos(array) {
     let impares = []
@@ -229,6 +246,8 @@ function devolverImparesPorDos(array) {
 array = [0, 0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 console.log(devolverImparesPorDos(array))
 
+console.clear()
+
 // 11. Escribe una función que tome un array de objetos con propiedades "nombre" y "edad", y devuelva la edad promedio de todos los objetos.
 function determinarPromedioEdades(objeto) {
     let promedio = 0
@@ -241,6 +260,8 @@ function determinarPromedioEdades(objeto) {
 }
 
 console.log(determinarPromedioEdades(personas))
+
+console.clear()
 
 // 12. Implementa una función que tome un array de strings y devuelva un nuevo array con solo los strings que contengan una letra específica.
 function buscarNombre(array, letra) {
@@ -257,6 +278,8 @@ array = ["Maria", "Teresa", "Mariana", "Jose", "Pedro", "Juan"]
 letra = "e"
 console.log(buscarNombre(array, letra))
 
+console.clear()
+
 // 13. Crea una función que tome dos arrays y devuelva un nuevo array con los elementos comunes a ambos.
 function buscarNombre(array1, array2) {
     let comun = []
@@ -271,6 +294,8 @@ function buscarNombre(array1, array2) {
 let array1 = ["manzana", "naranja", "pera", "plátano", "uva", "mango", "sandía", "papaya", "kiwi", "durazno"]
 let array2 = ["uva", "pera", "mango", "fresa", "kiwi", "manzana", "piña", "melon", "sandía", "cereza"]
 console.log(buscarNombre(array1, array2))
+
+console.clear()
 
 // 14. Escribe una función que tome un array de objetos con propiedades "nombre" y "puntuación", y devuelva el objeto con la puntuación más alta.
 function determinarMayorPuntuacion(objeto) {
@@ -301,23 +326,29 @@ const puntuacion = [
 
 console.log(determinarMayorPuntuacion(puntuacion))
 
-// 15. Implementa una función que tome un array de números y devuelva un nuevo array con solo los números distintos (eliminando los duplicados).
-array = [0, 0, -1, -1, -1, 1, -2, -3, 5, -8, 13, -21, 34] 
+console.clear()
 
-let sinRepetidos = array.filter( (elemento, index) => { return  ( array.indexOf(elemento) === index  ) } )
+// 15. Implementa una función que tome un array de números y devuelva un nuevo array con solo los números distintos (eliminando los duplicados).
+array = [0, 0, -1, -1, -1, 1, -2, -3, 5, -8, 13, -21, 34]
+
+let sinRepetidos = array.filter((elemento, index) => { return (array.indexOf(elemento) === index) })
 
 console.log(sinRepetidos)
+
+console.clear()
 
 // 16. Crea una función que tome un array de strings y devuelva un nuevo array con las palabras en orden alfabético.
 array = ["manzana", "naranja", "pera", "plátano", "uva", "mango", "sandía", "papaya", "kiwi", "durazno"]
 
-const ordenarArray = (array) => { 
-    return array.sort( (a, b) =>{
-        return (a > b) ? 1: (a < b) ? -1: 0 
+const ordenarArray = (array) => {
+    return array.sort((a, b) => {
+        return (a > b) ? 1 : (a < b) ? -1 : 0
     })
 }
 
 console.log(ordenarArray(array))
+
+console.clear()
 
 // 17. Escribe una función que tome un array de objetos con propiedades "nombre" y "edad", y devuelva un nuevo array con solo los nombres ordenados alfabéticamente.
 // const personas = [
@@ -329,12 +360,12 @@ console.log(ordenarArray(array))
 //     { nombre: "Laura", edad: 19 }
 // ]
 
-function devolverArrayOrdenado(objeto){
-    sortedPersonas = objeto.sort( (nombre1, nombre2) => (nombre1.nombre > nombre2.nombre) ? 1: (nombre1.nombre < nombre2.nombre) ? -1: 0 )
+function devolverArrayOrdenado(objeto) {
+    sortedPersonas = objeto.sort((nombre1, nombre2) => (nombre1.nombre > nombre2.nombre) ? 1 : (nombre1.nombre < nombre2.nombre) ? -1 : 0)
 
     let nombresOrdenados = []
 
-    let prueba = sortedPersonas.filter(persona => {return persona.nombre})
+    let prueba = sortedPersonas.filter(persona => { return persona.nombre })
 
     console.log(prueba)
 
@@ -342,7 +373,7 @@ function devolverArrayOrdenado(objeto){
 
     console.log(prueba2)
 
-    for (let personas of sortedPersonas){
+    for (let personas of sortedPersonas) {
         nombresOrdenados.push(personas.nombre)
     }
     return nombresOrdenados
@@ -350,27 +381,92 @@ function devolverArrayOrdenado(objeto){
 
 console.log(devolverArrayOrdenado(personas))
 
-// 18. Implementa una clase "Estudiante" que tenga las propiedades "nombre", "edad" y "cursos" (un array de strings). Crea varios objetos "Estudiante" y realiza operaciones con ellos (agregar cursos, obtener la cantidad de cursos, etc.).
+console.clear()
 
+// 18. Implementa una clase "Estudiante" que tenga las propiedades "nombre", "edad" y "cursos" (un array de strings). Crea varios objetos "Estudiante" y realiza operaciones con ellos (agregar cursos, obtener la cantidad de cursos, etc.).
+class Estudiante {
+    constructor(nombre, edad, cursos) {
+        this.nombre = nombre,
+            this.edad = edad,
+            this.cursos = cursos
+    }
+}
+
+const nombres = ["Laura", "Carlos", "Ana", "David", "Sofia", "Diego", "Valeria", "Luis", "Camila", "Javier"];
+const materias = [
+    ["Historia", "Geografía", "Literatura", "Arte", "Sociales"],
+    ["Biología", "Química", "Física", "Matemáticas", "Ciencias Naturales"],
+    ["Inglés", "Francés", "Alemán", "Italiano", "Español"],
+    ["Programación", "Algoritmos", "Bases de Datos", "Inteligencia Artificial", "Sistemas Operativos"],
+    ["Economía", "Administración", "Contabilidad", "Marketing", "Finanzas"]
+];
+
+function generarEdadAleatoria(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+const estudiante1 = new Estudiante(nombres[0], generarEdadAleatoria(18, 25), materias[0]);
+const estudiante2 = new Estudiante(nombres[1], generarEdadAleatoria(18, 25), materias[1]);
+const estudiante3 = new Estudiante(nombres[2], generarEdadAleatoria(18, 25), materias[2]);
+const estudiante4 = new Estudiante(nombres[3], generarEdadAleatoria(18, 25), materias[3]);
+const estudiante5 = new Estudiante(nombres[4], generarEdadAleatoria(18, 25), materias[4]);
+const estudiante6 = new Estudiante(nombres[5], generarEdadAleatoria(18, 25), materias[0]);
+const estudiante7 = new Estudiante(nombres[6], generarEdadAleatoria(18, 25), materias[1]);
+const estudiante8 = new Estudiante(nombres[7], generarEdadAleatoria(18, 25), materias[2]);
+const estudiante9 = new Estudiante(nombres[8], generarEdadAleatoria(18, 25), materias[3]);
+const estudiante10 = new Estudiante(nombres[9], generarEdadAleatoria(18, 25), materias[4]);
+
+//Agregar todos los estudiantes a una lista
+let estudiantes = []
+for (let i = 1; i <= 10; i++) {
+    const estudiante = eval(`estudiante${i}`)
+    estudiantes.push(estudiante)
+}
+//console.log(estudiantes)
+
+//Agregar cursos
+estudiante1.cursos.push("Geometria")
+//console.log(estudiante1)
+
+//Agregar cursos a todos
+estudiantes.forEach(estudiante => {
+    if (!estudiante.cursos.includes("Geometria")) { estudiante.cursos.push("Geometria") }
+})
+
+//console.log(estudiantes)
+
+//Determinar todos los cursos que hay
+let cursos = []
+estudiantes.forEach(persona => {
+    persona.cursos.forEach(materia => {
+        if (!cursos.includes(materia)) {
+            cursos.push(materia)
+        }
+    })
+})
+
+console.log(cursos)
+
+console.clear()
 // 19. Crea una clase "Calculadora" que tenga un array de números como propiedad. La clase debe tener métodos para sumar todos los números, restar todos los números y devolver el promedio de todos los números.
 class Calculadora {
-    sumarArray (array){
+    sumarArray(array) {
         let suma = 0
-        for(let i of array){
-            suma += parseFloat(i) 
+        for (let i of array) {
+            suma += parseFloat(i)
         }
         return suma
     }
 
-    restarArray(array){
+    restarArray(array) {
         let resta = 0
-        for(let i of array){
-            resta -= parseFloat(i) 
+        for (let i of array) {
+            resta -= parseFloat(i)
         }
         return resta
     }
 
-    sacarPromedio(array){
+    sacarPromedio(array) {
         let promedio = 0
         promedio = this.sumarArray(array) / array.length
         return promedio
@@ -385,14 +481,51 @@ console.log(calculo1.sumarArray(array))
 console.log(calculo1.restarArray(array))
 console.log(calculo1.sacarPromedio(array))
 
-
+console.clear()
 // 20. Implementa una clase "Tienda" que tenga una propiedad "productos" (un array de objetos) y métodos para agregar productos, eliminar productos y buscar productos por nombre.
 
+class Tienda {
+    constructor(arrayProductos) {
+        this.productos = arrayProductos
+    }
 
+    buscarProducto(busqueda) {
+        let resultado = this.productos.filter( producto =>  producto.nombre.includes(busqueda) )
+        console.log(resultado)
+    }
 
+    agregarProductos(producto, precio){
+        productos.push({ nombre: producto, precio: precio })
+    }
 
+    eliminarProductos(eliminar){
+        if(this.productos.some( producto =>  producto.nombre.includes(eliminar) )){
+            let indice = this.productos.findIndex( producto => producto.nombre === eliminar )
+            this.productos.splice(indice, 1)
+        }
+    }
+}
 
+const productos = [
+    { nombre: "Camiseta", precio: 20.99 },
+    { nombre: "Pantalón", precio: 39.99 },
+    { nombre: "Zapatos", precio: 59.99 },
+    { nombre: "Bolso", precio: 29.99 },
+    { nombre: "Gafas de sol", precio: 14.99 },
+    { nombre: "Reloj", precio: 79.99 },
+    { nombre: "Teléfono móvil", precio: 399.99 },
+    { nombre: "Portátil", precio: 799.99 },
+    { nombre: "Auriculares", precio: 49.99 },
+    { nombre: "Tableta", precio: 299.99 }
+]
 
+let tienda1 = new Tienda(productos)
+
+tienda1.buscarProducto("Panta")
+tienda1.agregarProductos("Short", 6500)
+tienda1.eliminarProductos("Reloj")
+
+console.log(productos)
 
 
 
